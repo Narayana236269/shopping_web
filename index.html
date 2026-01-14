@@ -9,104 +9,103 @@
     />
   </head>
   <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-    body {
-      display: grid;
-      grid-template-columns: 20vw 79vw;
-      grid-template-rows: 200vh 100vh;
-    }
-    .category {
-      background-color: rgb(235, 180, 113);
-      border: 5px black solid;
-    }
-    .products {
-      /* background-color: rgb(235, 214, 174);
-      background-color: rgb(133, 147, 234); */
-    }
-    .headers {
-      display: flex;
-      justify-content: space-evenly;
-      border: 5px solid;
-      /* background:linear-gradient(wh); */
-      background-color: rgb(235, 180, 113);
-      border-radius: 5px;
-    }
-    #scr_symbol {
-      margin-left: 500px;
-    }
+              * {
+                margin: 0px;
+                padding: 0px;
+              }
+              body {
+                /* display: grid;
+                grid-template-columns: 20vw 79vw;
+                grid-template-rows: 200vh 100vh; */
 
-    .scarch {
-      width: 30%;
-      height: 100px;
-      font-size: 18px;
-      border-radius: 5px;
-      position: relative;
-      font-size: 40px;
-      font-weight: bold;
-      border-radius: 5px;
-      border: 5px solid black;
-    }
+                display: grid;
+                grid-template-columns: 20vw 80vw;
+                min-height: 100vh;
+              }
+              .category {
+                background-color: rgb(235, 180, 113);
+                border: 2px black solid;
+              }
+              .products {
+                /* background-color: rgb(235, 214, 174);
+                background-color: rgb(133, 147, 234); */
+              }
+              .headers {
+                display: flex;
+                justify-content: space-evenly;
+                border: 5px solid;
+                /* background:linear-gradient(wh);
+                /* background-color: rgb(235, 180, 113);
+                border-radius: 5px; */ */
 
-    .material-symbols-outlined {
-      color: blackx;
-      font-size: 5vh;
-      border: 5px solid black;
-      cursor: pointer;
-    }
-    .category-list {
-      color: rgb(7, 3, 3);
-      padding: 10px;
-      margin: auto;
-      align-items: center;
-      font-size: 60px;
-    }
-    .elements {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
-    }
-    img {
-      height: 20vh;
-      width: 10vw;
 
-      padding: 50x;
-    }
 
-    .prod_info {
-      height: 30vh;
-      width: 10vw;
-      font-size: 20px;
-      /* background: linear-gradient(
-        to bottom right,
-        rgb(8, 100, 198),
-        rgb(133, 192, 192)
-      ); */
-
-      border-radius: 10px;
-      border: 5px grey solid;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-between;
-      align-items: center;
     }
+              #scr_symbol {
+                /* margin-left: 500px; */
+              }
+
+              .scarch {
+
+                font-size: 18px;
+                border-radius: 5px;
+                position: relative;
+                font-size:20px;
+                font-weight: bold;
+                border-radius: 5px;
+                border: 2px solid black;
+              }
+
+              .material-symbols-outlined {
+                color: black;
+                font-size: 5vh;
+                border: 2px solid black;
+                cursor: pointer;
+              }
+              .category-list {
+                /* color: rgb(7, 3, 3);
+                padding: 10px;
+                margin: auto;
+                align-items: center;
+                font-size: 24px; */
+
+                font-size: 24px;
+              }
+
+              .elements {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+              }
+              img {
+                height: 20vh;
+                width: 10vw;
+
+                padding: 50x;
+              }
+
+              .prod_info {
+                height: 30vh;
+                width: 10vw;
+                font-size: 20px;
+                /* background: linear-gradient(
+                  to bottom right,
+                  rgb(8, 100, 198),
+                  rgb(133, 192, 192)
+                ); */
+
+                border-radius: 10px;
+                border: 5px grey solid;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                align-items: center;
+              }
   </style>
   <body>
     <div class="category">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="100px"
-        viewBox="0 -960 960 960"
-        width="100px"
-        fill="#e3e3e3"
-      >
-        <path
-          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-        />
-      </svg>
+      <span class="material-symbols-outlined"> menu </span>
       <ul class="category-list" id="category"></ul>
     </div>
     <div class="products">
