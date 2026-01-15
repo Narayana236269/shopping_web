@@ -9,99 +9,106 @@
     />
   </head>
   <style>
-              * {
-                margin: 0px;
-                padding: 0px;
-              }
-              body {
-                /* display: grid;
-                grid-template-columns: 20vw 79vw;
-                grid-template-rows: 200vh 100vh; */
-
-                display: grid;
-                grid-template-columns: 20vw 80vw;
-                min-height: 100vh;
-              }
-              .category {
-                background-color: rgb(235, 180, 113);
-                border: 2px black solid;
-              }
-              .products {
-                /* background-color: rgb(235, 214, 174);
-                background-color: rgb(133, 147, 234); */
-              }
-              .headers {
-                display: flex;
-                justify-content: space-evenly;
-                border: 5px solid;
-                /* background:linear-gradient(wh);
-                /* background-color: rgb(235, 180, 113);
-                border-radius: 5px; */ */
-
-
-
+    * {
+      margin: 0px;
+      padding: 0px;
     }
-              #scr_symbol {
-                /* margin-left: 500px; */
-              }
+    body {
+      display: grid;
+      grid-template-columns: 20vw 80vw;
+      min-height: 100vh;
+    }
 
-              .scarch {
+    @media screen and (orientation: landscape) {
+      body {
+        background: white;
+      }
+    }
 
-                font-size: 18px;
-                border-radius: 5px;
-                position: relative;
-                font-size:20px;
-                font-weight: bold;
-                border-radius: 5px;
-                border: 2px solid black;
-              }
+    .category {
+      background-color: rgb(235, 180, 113);
+      border: 2px black solid;
+    }
+    .products {
+      /* background-color: rgb(235, 214, 174);
+                    background-color: rgb(133, 147, 234); */
+    }
+    .headers {
+      display: flex;
+      justify-content: space-evenly;
+      border: 5px solid;
+      background-color: rgb(235, 180, 113);
+    }
+    #scr_symbol {
+      /* margin-left: 500px; */
+    }
 
-              .material-symbols-outlined {
-                color: black;
-                font-size: 5vh;
-                border: 2px solid black;
-                cursor: pointer;
-              }
-              .category-list {
-                /* color: rgb(7, 3, 3);
-                padding: 10px;
-                margin: auto;
-                align-items: center;
-                font-size: 24px; */
+    .scarch {
+      width: 10vw;
+      font-size: 18px;
+      border-radius: 5px;
+      position: relative;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      border: 2px solid black;
+    }
 
-                font-size: 24px;
-              }
+    .material-symbols-outlined {
+      color: black;
+      font-size: 5vh;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+    .category-list {
+      /* color: rgb(7, 3, 3);
+                    padding: 10px;
+                    margin: auto;
+                    align-items: center;
+                    font-size: 24px; */
 
-              .elements {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                padding: 20px;
-              }
-              img {
-                height: 20vh;
-                width: 10vw;
+      font-size: 24px;
+    }
 
-                padding: 50x;
-              }
+    .elements {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    img {
+      height: 20vh;
+      width: 10vw;
 
-              .prod_info {
-                height: 30vh;
-                width: 10vw;
-                font-size: 20px;
-                /* background: linear-gradient(
-                  to bottom right,
-                  rgb(8, 100, 198),
-                  rgb(133, 192, 192)
-                ); */
+      padding: 50x;
+    }
 
-                border-radius: 10px;
-                border: 5px grey solid;
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between;
-                align-items: center;
-              }
+    .prod_info {
+      height: 30vh;
+      width: 15vw;
+      font-size: 40px;
+      /* background: linear-gradient(
+                      to bottom right,
+                      rgb(8, 100, 198),
+                      rgb(133, 192, 192)
+                    ); */
+
+      border-radius: 10px;
+      border: 5px grey solid;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #orderbtn {
+      font-size: 40px;
+      background-color: orange;
+      color: white;
+      cursor: pointer;
+    }
+    #orderbtn:hover {
+      background-color: rgb(219, 178, 101);
+    }
   </style>
   <body>
     <div class="category">

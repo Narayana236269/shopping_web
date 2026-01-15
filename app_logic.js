@@ -18,7 +18,9 @@ fetch("https://fakestoreapi.com/products")
     for (let i = 0; i < data.length; i++) {
       image_insert = ` <div class="elements" id="elements"> <div class="prod_info"><img src="${data[i].image}">
       <p id="discrip">${data[i].category}</p>
-     <p id="price">${data[i].price} </p></div>`;
+     <p id="price">₹${data[i].price} </p>
+     <button id="orderbtn">ORDER NOW</button>
+     </div>`;
       products.innerHTML += image_insert;
     }
     console.log(data);
