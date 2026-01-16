@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -101,7 +101,7 @@
       align-items: center;
     }
     #orderbtn {
-      font-size: 40px;
+      font-size: 10;
       background-color: orange;
       color: white;
       cursor: pointer;
@@ -127,5 +127,208 @@
       <div class="elements" id="elements"></div>
     </div>
   </body>
+  <script src="app_logic.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ========== DESKTOP (DEFAULT) ========== */
+      body {
+        display: grid;
+        grid-template-columns: 20vw 80vw;
+        min-height: 100vh;
+      }
+
+      .category {
+        background-color: rgb(235, 180, 113);
+        border: 2px black solid;
+        padding: 10px;
+      }
+
+      .headers {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 5px solid;
+        background-color: rgb(235, 180, 113);
+        padding: 10px;
+      }
+
+      .scarch {
+        width: 10vw;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 4px;
+      }
+
+      .material-symbols-outlined {
+        color: black;
+        font-size: 5vh;
+        border: 2px solid black;
+        cursor: pointer;
+        padding: 4px;
+      }
+
+      .category-list {
+        font-size: 24px;
+        list-style: none;
+      }
+
+      .elements {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      img {
+        height: 20vh;
+        width: 10vw;
+        object-fit: contain;
+      }
+
+      .prod_info {
+        height: 30vh;
+        width: 15vw;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 5px grey solid;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      #orderbtn {
+        font-size: 16px;
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+        padding: 6px 10px;
+        border: none;
+      }
+
+      #orderbtn:hover {
+        background-color: rgb(219, 178, 101);
+      }
+
+      /* ========== TABLET (≤ 1024px) ========== */
+      @media screen and (max-width: 1024px) {
+        body {
+          grid-template-columns: 30vw 70vw;
+        }
+
+        .scarch {
+          width: 20vw;
+          font-size: 16px;
+        }
+
+        .material-symbols-outlined {
+          font-size: 4vh;
+        }
+
+        .prod_info {
+          width: 25vw;
+          height: auto;
+          font-size: 18px;
+        }
+
+        img {
+          width: 20vw;
+          height: 18vh;
+        }
+      }
+
+      /* ========== MOBILE (≤ 768px) ========== */
+      @media screen and (max-width: 768px) {
+        body {
+          grid-template-columns: 1fr;
+        }
+
+        .headers {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .scarch {
+          width: 100%;
+        }
+
+        .elements {
+          justify-content: center;
+        }
+
+        .prod_info {
+          width: 80vw;
+        }
+
+        img {
+          width: 60vw;
+          height: 25vh;
+        }
+      }
+
+      /* ========== SMALL MOBILE (≤ 480px) ========== */
+      @media screen and (max-width: 480px) {
+        .category-list {
+          font-size: 18px;
+        }
+
+        .material-symbols-outlined {
+          font-size: 3vh;
+        }
+
+        .prod_info {
+          width: 90vw;
+          font-size: 16px;
+        }
+
+        #orderbtn {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="category">
+      <span class="material-symbols-outlined">menu</span>
+      <ul class="category-list" id="category"></ul>
+    </div>
+
+    <div class="products">
+      <div class="headers">
+        <span class="material-symbols-outlined" id="scr_symbol">search</span>
+        <input type="text" id="scarch" class="scarch" />
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span class="material-symbols-outlined">account_box</span>
+      </div>
+
+      <div class="elements" id="elements"></div>
+    </div>
+  </body>
+
   <script src="app_logic.js"></script>
 </html>
